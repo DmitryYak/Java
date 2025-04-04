@@ -83,3 +83,120 @@ class Main {
 
     }
 }
+
+// Scanner as input values
+//Доработайте программу так, чтобы она считывала строку, а затем выводила эту же строку на печать.
+//
+//Примечание. В этой задаче, как и в большинстве других, есть скрытые тесты с другими значениями ввода.
+// Код не должен быть привязан к конкретным данным.
+
+import java.util.Scanner;
+
+class Test {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String st = sc.nextLine();
+        System.out.println(st);
+
+
+    }
+}
+
+//Напишите программу, которая считывает имя пользователя и затем приветствует его.
+
+import java.util.Scanner;
+class MySolution {
+    public static void main(String[] args) {
+        //put your code here
+        Scanner sc = new Scanner(System.in);
+        String nameHi = "Привет, ";
+        System.out.print(nameHi);
+        System.out.println(sc.nextLine());
+    }
+}
+
+//Напишите программу, которая считывает строку, а затем выводит эту же строку на печать 3 раза в столбик.
+import java.util.Scanner;
+class MySolution {
+    public static void main(String[] args) {
+        //put your code here
+        Scanner sc = new Scanner(System.in);
+        String scString = sc.nextLine();
+        System.out.println(scString);
+        System.out.println(scString);
+        System.out.println(scString);
+        sc.close();
+    }
+}
+
+//Напишите программу, которая считывает строку, а затем выводит эту же строку на печать 2 раза в первой строке через пробел,
+// а затем ещё два раза в столбик.
+import java.util.Scanner;
+class MySolution {
+    public static void main(String[] args) {
+        //put your code here
+        Scanner sc = new Scanner(System.in);
+        String scPrint = sc.nextLine();
+        System.out.println(scPrint + " " + scPrint);
+        System.out.println(scPrint);
+        System.out.println(scPrint);
+
+
+    }
+}
+
+//Напишите программу, которая считывает целое число t - температуру воздуха, и выводит фразу:
+//
+//Температура воздуха сегодня: t градусов.
+import java.util.Scanner;
+class MySolution {
+    public static void main(String[] args) {
+        //put your code here
+        String myText_1 = "Температура воздуха сегодня: ";
+        String myText_2 = " градусов.";
+        Scanner sc = new Scanner(System.in);
+        String degree = sc.nextLine();
+        System.out.println(myText_1 + degree + myText_2);
+
+    }
+}
+
+//Напишите программу, которая принимает три числа - год, месяц и день и выводит на печать фразу:
+//
+//DD:MM:YYYY.
+//
+//Проверять валидность даты не требуется.
+import java.util.Scanner;
+class MySolution {
+    public static void main(String[] args) {
+        //put your code here
+        Scanner sc = new Scanner(System.in);
+        String year = sc.nextLine();
+        String month = sc.nextLine();
+        String day = sc.nextLine();
+        System.out.print(day + ":" + month + ":" + year);
+    }
+}
+
+//Давайте напишем программу-помощника, которая сообщает, сколько у Вас новых сообщений на почте.
+//
+//Формат ввода. На первой строке вводится имя пользователя, на второй имя помощника, на третьей - количество сообщений.
+//
+//Формат вывода - в соответствии с образцом.Sample Output:
+//
+//Привет, Илон Маск, это твой помощник Рогозин.
+//У тебя 19 новых писем.
+import java.util.Scanner;
+class HowMessages
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String nameUser = sc.nextLine();
+        String nameHelper = sc.nextLine();
+        String countMessages = sc.nextLine();
+
+        System.out.println("Привет, " + nameUser + ", это твой помощник " + nameHelper + ".");
+        System.out.println("У тебя " + countMessages + " новых писем.");
+    }
+
+}
