@@ -200,3 +200,35 @@ class HowMessages
     }
 
 }
+
+//Operators
+//Закончите программу таким образом, чтобы она выводила на печать целое число 5. Переменную можно назвать myVar.
+class MyNumber {
+    public static void main(String[] args) {
+        // put your code here
+        Number myVar = 5;
+        System.out.print(myVar);
+   }
+}
+
+//Завершите программу, которая выводит на печать сумму чисел 2 и 4. Переменную вывода можно назвать myVar.
+class MyNumber {
+    public static void main(String[] args) {
+        int x = 2; int y = 4;
+        // put your code here
+        int myVar = x + y;
+        System.out.print(myVar);
+   }
+}
+
+//Напишите программу, которая получает два целых числа и выводит их сумму.
+import java.util.Scanner;
+class MyNumber {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int firstNum = sc.nextInt();
+    int secondNum = sc.nextInt();
+    System.out.println(firstNum + secondNum);
+   }
+}
+
