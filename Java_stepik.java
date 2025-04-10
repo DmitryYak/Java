@@ -232,3 +232,49 @@ class MyNumber {
    }
 }
 
+//На вход подаются два положительных действительных числа - стороны прямоугольника. Посчитайте его площадь и периметр и выведите на отдельных строках.
+import java.util.Scanner;
+class MyNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double x = sc.nextDouble();
+        double y = sc.nextDouble();
+        System.out.println(x * y);
+        System.out.println((x * 2) + (y * 2));
+   }
+}
+
+import java.util.Scanner;
+class MyNumber {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+        double x = (sc.nextDouble());
+        double y = (5 * (x * x)) + (2 * x) + 11;
+        System.out.println(y);
+   }
+}
+
+//На вход подаётся целое число n. Выведите в одной строке через пробел само число, его квадрат и куб.
+import java.util.Scanner;
+class MyNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.print(n + " ");
+        System.out.print(n * n + " ");
+        System.out.print(n * n * n);
+
+    }
+}
+//На вход подаётся три числа. Выведите на одной строке их среднее арифметическое.
+import java.util.Scanner;
+class MyNumber {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+       double x = sc.nextDouble();
+        double y = sc.nextDouble();
+        double i = sc.nextDouble();
+        double result = ((x + y + i) / 3);
+        System.out.println(result);
+   }
+}
