@@ -278,3 +278,63 @@ class MyNumber {
         System.out.println(result);
    }
 }
+
+//Завершите программу таким образом, чтобы она выводила на печать остаток от деления 41 на 7. Переменную вывода можно назвать myVar.
+class MyNumber {
+    public static void main(String[] args) {
+        int x = 41; int y = 7;
+        // put your code here
+        int myVar = (x % y);
+        System.out.print(myVar);
+   }
+}
+
+//На вход подаётся целое число. Найдите его последнюю цифру.
+import java.util.Scanner;
+class MyNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+       // int myVar = sc.nextInt();
+        int myVar = Math.abs(sc.nextInt() % 10);
+        System.out.print(myVar);
+   }
+}
+
+//ООО "Круче Гугла" нанимает Java-разработчиков. Месячный бюджет на зарплату разработчиков - X, зарплата одного разработчика - Y.
+Выведите на печать в одной строке через пробел, какое максимальное количество разработчиков компания сможет нанять,
+и какое количество денег из ежемесячного бюджета останется неиспользованным.
+import java.util.Scanner;
+class MyNumber {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int allSalary = sc.nextInt();
+    int oneSalary = sc.nextInt();
+    int countEmployes = (allSalary / oneSalary);
+    int mon = (allSalary % oneSalary);
+        System.out.print(countEmployes + " " + mon);
+   }
+}
+
+//Задача повышенной сложности
+Реализуйте простые домашние часы.
+На вход подаётся число секунд, которое прошло с момента начала суток (00:00:00). Выведите текущее время в формате ЧЧ:ММ:СС.
+Примечание 1. Используйте 24-часовой формат.
+Примечание 2. Для преобразования типа int в тип String (если это понадобится) можно использовать
+встроенный служебный метод String.valueOf(num), который преобразует число num в строку "num".
+    import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int totalSeconds = sc.nextInt();
+
+        int hours = totalSeconds / 3600 % 24; 
+        int remainingSeconds = totalSeconds % 3600;
+        int minutes = remainingSeconds / 60;
+        int seconds = remainingSeconds % 60;
+
+ 
+        String time = String.format("%02d:%02d:%02d", hours, minutes, seconds);
+        System.out.println(time);
+    }
+}
