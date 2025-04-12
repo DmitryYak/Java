@@ -338,3 +338,14 @@ public class Main {
         System.out.println(time);
     }
 }
+
+//Измените программу таким образом, чтобы она выводила на печать число 11.
+class myNumber {
+    public static void main(String[] args) {
+        int x = 10;
+        // put your code here 
+    System.out.println(++x);
+   }
+}
+
+
