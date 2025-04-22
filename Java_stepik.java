@@ -348,4 +348,17 @@ class myNumber {
    }
 }
 
+// Измените программу таким образом, чтобы она выводила на печать числа 11, 12, 13. Используйте инкремент.
+class MyNumber {
+    public static void main(String[] args) {
+        int x = 10;
+        // put your code here
+        System.out.println(++x);
+        System.out.println(++x);
+        System.out.println(++x);
+    }
+}
+
+
+
 
