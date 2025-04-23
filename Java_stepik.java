@@ -359,6 +359,26 @@ class MyNumber {
     }
 }
 
+//Завершите программу таким образом, чтобы она выводила на печать число 13.
+class MyNumber {
+    public static void main(String[] args) {
+        int x = 25; int y;
+        // put your code here
+        y = x - 11;
+        System.out.print(y -= 1);
+   }
+}
+
+//На вход подаётся натуральное число n. Выведите на печать числа n - 1, n, n + 1 в одну строку, через пробел (см. образец).
+import java.util.Scanner;
+class MyNumber {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.print(n - 1 + " " + n + " " + ++n);
+
+    }
+}
 
 
 
