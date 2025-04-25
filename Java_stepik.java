@@ -395,4 +395,25 @@ class MyNumber {
 }
 
 
+//Строки
+//Завершите программу таким образом, чтобы она выводила на печать приветствие Hello, World!
+class MyString {
+   public static void main(String[] args) {
+       String myVar;
+       myVar = "Hello, World!"; 
+       System.out.print(myVar);
+   }
+}
+
+// На вход подаётся строка. Выведите её длину.
+import java.util.Scanner;
+class MyProgram {
+   public static void main(String[] args) {
+       //put your code here
+       Scanner sc = new Scanner(System.in);
+       String inpStr = sc.nextLine();
+       System.out.println(inpStr.length());
+   }
+}
+
 
