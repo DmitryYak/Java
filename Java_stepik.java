@@ -416,4 +416,29 @@ class MyProgram {
    }
 }
 
+//На вход подаётся строка текста. Выведите её первый и последний элемент в одну строку через пробел. 
+import java.util.Scanner;
+class MyProgram {
+   public static void main(String[] args) {
+       //put your code here
+       Scanner sc = new Scanner(System.in);
+       String myStr = sc.nextLine();
+       String result = myStr.charAt(0) + " " + myStr.charAt(myStr.length() - 1);
+       System.out.println(result);
+   }
+}
+
+//На вход подаётся строка текста, затем слово. Выведите на печать true, если слово содержится в строке, и false - если не содержится.
+import java.util.Scanner;
+class MyProgram {
+   public static void main(String[] args) {
+       //put your code here
+       Scanner sc = new Scanner(System.in);
+       String myStr = sc.nextLine();
+       String checkStr = sc.nextLine();
+       boolean result = myStr.contains(checkStr);
+       System.out.println(result);
+   }
+}
+
 
