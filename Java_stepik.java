@@ -441,4 +441,28 @@ class MyProgram {
    }
 }
 
+//На вход подаётся строка. Выведите её на печать сначала строчными, а затем прописными буквами.
+import java.util.Scanner;
+class MyProgram {
+   public static void main(String[] args) {
+       //put your code here
+       Scanner sc = new Scanner(System.in);
+       String myStr = sc.nextLine();
+       System.out.println(myStr.toLowerCase());
+       System.out.println(myStr.toUpperCase());
+   }
+}
+
+//На вход подаётся строка, а затем целое число n > 0. Выведите n- й символ с начала строки. 
+import java.util.Scanner;
+class MyProgram {
+   public static void main(String[] args) {
+       //put your code here
+       Scanner sc = new Scanner(System.in);
+       String myStr = sc.nextLine();
+       int myInt = sc.nextInt();
+       System.out.println(myStr.charAt(myInt - 1));
+   }
+}
+
 
